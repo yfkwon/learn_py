@@ -10,7 +10,7 @@ __credits__ = ["young phil kwon", "Star Play Lab"]
 __license__ = "GPL"
 __version__ = "0.0.1"
 __maintainer__ = "young phil kwon"
-__email__ = "yfkwon@starplaylab.com"
+__email__ = "yfkwon@starplay.io"
 __status__ = "Test Bed"
 # ===========================================================
 
@@ -66,7 +66,7 @@ class Robot:
         :param self:
         :return:
         """
-        print "Greeings, my masters call me {}".format(self.name)
+        print "Greetings, my masters call me {}".format(self.name)
 
     @classmethod
     def how_many(cls):
