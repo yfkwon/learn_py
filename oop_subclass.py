@@ -92,7 +92,7 @@ if __name__ == "__main__":
     t = Teacher('Mrs. Shrvidya', 40, 30000)
     s = Student('Swaroop', 25, 75)
 
-    print()
+    print
 
     members = [t, s]
     for member in members:
