@@ -20,8 +20,13 @@ import sys
 import time
 
 # ===========================================================
-# Program main routine
-if __name__ == "__main__":
+def read_file_using_try_exception():
+    """
+    Function read file using try ... exception ... finally
+    :return:
+    """
+    print "Read file using try and finally"
+
     f = None
     try:
         f = open("poem.txt")
@@ -42,4 +47,27 @@ if __name__ == "__main__":
         if f:
             f.close()
         print "(Cleaning up: Closed the file)"
+
+
+def read_file_using_with():
+    """
+    Function read file using with
+    :return:
+    """
+    print "Read file using with"
+
+    f = None
+    with open("poem.txt") as f:
+        for line in f:
+            print "Press ctrl+c now"
+            # To make sure it runs for a while
+            time.sleep(2)
+            print line,
+
+
+# ===========================================================
+# Program main routine
+if __name__ == "__main__":
+    read_file_using_with()
+
 
